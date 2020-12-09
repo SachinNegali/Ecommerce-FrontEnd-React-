@@ -39,7 +39,7 @@ const ManageProducts = () => {
   return (
     <Base title="Welcome admin" description="Manage products here">
       <h2 className="mb-4">All products:</h2>
-      <Link className="btn btn-info" to={`/admin/dashboard`}>
+      <Link className="btn mb-4 btn-info" to={`/admin/dashboard`}>
         <span className="">Admin Home</span>
       </Link>
       <div className="row">
@@ -50,7 +50,7 @@ const ManageProducts = () => {
               
               <div key={index} className="row text-center mb-2 ">
                 <div className="col-4">
-                  <h3 className="text-white text-left">{product.name}</h3>
+                  <h3 className="text-dark text-left">{product.name}</h3>
                 </div>
                 <div className="col-4">
                   <Link

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ImageHelper from './helper/ImageHelper';
 import { Redirect } from 'react-router-dom';
 import { addItemTCart, removeItemFromCart } from './helper/cartHelper';
+import './card.css'
 
 const Card = ({ 
   product, 
@@ -37,7 +38,7 @@ const Card = ({
             addtoCart && (
                 <button
                 onClick={addToCart}
-                className="btn btn-block btn-outline-success mt-2 mb-2"
+                className="btn btn-block btn-outline-dark mt-2 mb-2"
               >
                 Add to Cart
               </button>
@@ -63,22 +64,18 @@ const Card = ({
     }
 
     return (
-      <div className="card text-white bg-dark border border-info ">
-        <div className="card-header lead">{cradTitle}</div>
-        <div className="card-body">
+      <div className="card text-dark bg-white border border-white">
+        <div className="card-body bg-white">
           {getARedirect(redirect)}
-          <ImageHelper product={product}/>
-          <p className="lead bg-success font-weight-normal text-wrap">
+          <ImageHelper product={product} />
+          <div className="lead"><h5>{cradTitle}</h5></div>
+          {/* <p className="lead bg-success font-weight-normal text-wrap">
             {cradDescription}
-          </p>
-          <p className="btn btn-success rounded  btn-sm px-4">$ {cradPrice }</p>
+          </p> */}
+          <p className="btn btn-dark rounded btn-sm px-4">₹{cradPrice}</p>
           <div className="row">
-            <div className="col-12">
-              {showAddToCart(addtoCart)}
-            </div>
-            <div className="col-12">
-             {showRemoveFromCart(removeFromCart)}
-            </div>
+            <div className="col-12">{showAddToCart(addtoCart)}</div>
+            <div className="col-12">{showRemoveFromCart(removeFromCart)}</div>
           </div>
         </div>
       </div>
