@@ -16,7 +16,7 @@ const AddCategory = () => {
     const goBackBtn = () => {
         return(
             <div className="mt-5 px-4">
-            <Link className="btn btn-sm btn-success mb-3" to="/admin/dashboard">Admin Home</Link>
+            <Link className="btn btn-sm btn-info mb-3" to="/admin/dashboard">Admin Home</Link>
         </div>
         )
     }
@@ -61,7 +61,7 @@ const AddCategory = () => {
         return(
         <form >
         <div className="form-group px-4">
-        <p>Enter Category</p>
+        <h5 className="text-dark">Enter Category</h5>
         <input type="text"
         className="form-control my-3"
         onChange={handleChange}
@@ -70,21 +70,23 @@ const AddCategory = () => {
         required
         placeholder="for ex. Summer"
         />
-        <button onClick={onSubmit} className="btn btn-outline-info">create category</button>
+        <button onClick={onSubmit} className="btn btn-dark">create category</button>
         </div>
         </form>
         )
     }
 
     return(
-    <Base title="Create Category" description="Add new category for new products" className="container col-6 bg-info p-4  ">
-        <div className="row bg-white rounded ">
-            <div className="col-mid-8 offset-mid-2 centre">
+    <Base title="Create Category" description="Add new category for new products" >
+        <div className="container col-6 bg-dark p-4 mb-4 col-md-6 col-lg-6 col-12 ">
+        <div className="row bg-white rounded">
+            <div className="col-mid-8 offset-mid-2centre ">
                 {succesMessage()}
                 {warningMessage()}
                 {categoryForm()}
                 {goBackBtn()}
             </div>
+        </div>
         </div>
     </Base>
     )

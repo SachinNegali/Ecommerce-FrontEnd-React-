@@ -31,10 +31,11 @@ const Base = ({
             
            <div className="text-center mt-4">   
                 <h5 className=" text-white">follow us </h5>
-               <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style={{color: "#f0f5f1", margin:"8px"}}></i>
+                <i class="fa fa-github-square fa-3x" aria-hidden="true" style={{color: "#f0f5f1", margin:"8px"}}></i>
                <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style={{color: "#f0f5f1", margin:"8px"}}></i>
+               <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style={{color: "#f0f5f1", margin:"8px"}}></i>
                <i class="fa fa-twitter-square fa-3x" aria-hidden="true" style={{color: "#f0f5f1", margin:"8px"}}></i>
-               <i class="fa fa-github-square fa-3x" aria-hidden="true" style={{color: "#f0f5f1", margin:"8px"}}></i>
+              
 
            </div>
             {/* <span className="text-muted ">

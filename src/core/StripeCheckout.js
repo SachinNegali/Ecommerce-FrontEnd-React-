@@ -59,7 +59,7 @@ const StripeCheckout = ({
         shippingAddress
         billingAddress
       >
-        <button className="btn btn-success">Pay with stripe</button>
+        <button className="btn rounded btn-dark">Pay with stripe</button>
       </StripeCheckoutButton>
     ) : (
       <Link to="/signin">
@@ -70,7 +70,7 @@ const StripeCheckout = ({
 
   return (
     <div>
-      <h3 className="text-white">Stripe Checkout {getFinalAmount()}</h3>
+      <h3 className="text-dark">Stripe Checkout {getFinalAmount()}</h3>
       {showStripeButton()}
     </div>
   );

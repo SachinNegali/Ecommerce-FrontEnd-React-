@@ -89,9 +89,9 @@ const AddProduct = () => {
 
   const createProductForm = () => (
     <form>
-      <span>Post photo</span>
+      <h6 className="text-dark"><span>Post photo</span></h6>
       <div className="form-group">
-        <label className="btn btn-block btn-success">
+        <label className="btn btn-block btn-dark rounded">
           <input
             onChange={handleChange("photo")}
             type="file"
@@ -156,7 +156,7 @@ const AddProduct = () => {
       <button
         type="submit"
         onClick={onSubmit}
-        className="btn btn-outline-success mb-3"
+        className="btn btn-dark btn-block text-center rounded mb-3"
       >
         Create Product
       </button>
@@ -167,12 +167,12 @@ const AddProduct = () => {
     <Base
       title="Add a product here!"
       description="Welcome to product creation section"
-      className="container bg-info p-4"
+      className="container bg-light p-4"
     >
-      <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">
+      {/* <Link to="/admin/dashboard" className="btn btn-md rounded btn-info mb-4 ">
         Admin Home
-      </Link>
-      <div className="row bg-dark text-white rounded">
+      </Link> */}
+      <div className="row bg-light text-white rounded">
         <div className="col-md-8 offset-md-2">
           {successMessage()}
           {createProductForm()}

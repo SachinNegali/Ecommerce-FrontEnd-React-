@@ -21,7 +21,7 @@ const Cart = () => {
 const loadAllProducts = () => {
     return(
         <div>
-            <h2>WishList</h2>
+            <h2 className="text-dark">WishList</h2>
             {products.map((product, index) =>  (
                 <Card key={index} product={product} removeFromCart={true}
                 addtoCart={false}
@@ -46,8 +46,8 @@ const loadCheckout = () => {
   return (
     <Base title="My Cart" description="Ready to Checkout">
       <div className="row text-center ">
-        <div className="col-3">{loadAllProducts()}</div>
-        <div className="col-6">
+        <div className="col-md-3 col-lg-3 col-12 mb-4">{loadAllProducts()}</div>
+        <div className="col-md-6 col-lg-6 col-12 mt-4 mb-4">
         <StripeCheckout products={products} setReload={setReload}/>
         </div>        
       </div>
