@@ -50,7 +50,7 @@ const ManageProducts = () => {
               
               <div key={index} className="row text-center mb-2 ">
                 <div className="col-4">
-                  <h3 className="text-dark text-left">{product.name}</h3>
+                  <h5 className="text-dark text-left">{product.name}</h5>
                 </div>
                 <div className="col-4">
                   <Link

@@ -16,9 +16,9 @@ const adminLeftSide = () => {
         <li className="list-group-item">
         <Link to="/admin/create/category" className="nav-link text-center text-dark"><h5> Create categories</h5></Link>
         </li>
-        <li className="list-group-item">
+        {/* <li className="list-group-item">
         <Link to="/admin/categories" className="nav-link text-center text-dark"> <h5>Manage categories</h5></Link>
-        </li>
+        </li> */}
         <li className="list-group-item">
         <Link to="/admin/create/product" className="nav-link text-center text-dark"> <h5>Create Product</h5></Link>
         </li>
@@ -63,7 +63,7 @@ const adminRightSide = () => {
         <div className="col-8 col-md-6 col-lg-8 col-12 mb-4">
             {adminRightSide()}    
             </div>
-            <div className="col-md-3 col-lg-4 col-12 mb-4">
+            <div className="col-md-6 col-lg-4 col-12 mb-4">
             {adminLeftSide()}    
             </div>
             

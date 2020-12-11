@@ -24,8 +24,7 @@ const Base = ({
            <h6 className="" style={{color:"#e6e6e6"}}>FAQs</h6>
            <h6 className="" style={{color:"#e6e6e6"}}>T&Cs</h6>
            <h6 className="" style={{color:"#e6e6e6"}}>Privacy Policy</h6>
-           <h6 className="text-muted" style={{color:"#e6e6e6"}}>Careers</h6>
-
+           
            </div>
             <div className="container"> 
             

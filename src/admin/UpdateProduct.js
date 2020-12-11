@@ -114,7 +114,7 @@ const UpdateProduct = ({match}) => {
     <form>
       <span>Post photo</span>
       <div className="form-group">
-        <label className="btn btn-block btn-success">
+        <label className="btn btn-block btn-dark">
           <input
             onChange={handleChange("photo")}
             type="file"
@@ -179,7 +179,7 @@ const UpdateProduct = ({match}) => {
       <button
         type="submit"
         onClick={onSubmit}
-        className="btn btn-outline-success mb-3"
+        className="btn btn-dark mb-3"
       >
         Update Product
       </button>
@@ -188,14 +188,14 @@ const UpdateProduct = ({match}) => {
 
   return (
     <Base
-      title="Add a product here!"
-      description="Welcome to product creation section"
-      className="container bg-info p-4"
+      title="Update Product"
+      description="Change Product Details"
+      className="container bg-light p-4 mb-4 col-lg-10 col-md-10 col-12"
     >
-      <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">
+      {/* <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">
         Admin Home
-      </Link>
-      <div className="row bg-dark text-white rounded">
+      </Link> */}
+      <div className="row bg-light text-dark rounded">
         <div className="col-md-8 offset-md-2">
           {successMessage()}
           {createProductForm()}

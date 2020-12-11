@@ -45,7 +45,7 @@ const Signin = () => {
             if ( user && user.role == 1) {
                 return <Redirect to="/admin/dashboard"/>
             } else {
-                return <Redirect to="/user/dashboard"/>
+                return <Redirect to="/"/>
                 
             }
         }
@@ -67,7 +67,7 @@ const Signin = () => {
     const errorMessage = () => {
         return(
         <div className="row">
-            <div className="col-md-4 offset-sm-4 text-left">
+            <div className="col-md-6 offset-sm-3 text-left">
             <div>
             <div className="alert alert-danger" style={{display: error ? "" : "none"}}>
             {error}
@@ -81,7 +81,10 @@ const Signin = () => {
     const signInForm = () => {
         return(
         <div className="row">
+                <h5 className="text-dark offset-sm-2">please login with email: <span className="font-weight-bold"> admin@email.com </span> password: <span className="font-weight-bold">admin@123</span> to perform CRUD operations</h5>
+
             <div className="col-md-4 offset-sm-4 text-left col-lg-4">
+
                 <form >
                     <div className="form-group">
                         <label className="text-dark">Email</label>

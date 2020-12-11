@@ -26,13 +26,13 @@ const Menu = ({history}) => (
                     Cart
                 </Link>
             </li>
-            {isAutheticated() && (
+            {/* {isAutheticated() && (
                 <li className="nav nav-tabs bg-dark">
                 <Link style = {currentTab(history, "/user/dashboard")} className="nav-link" to = "/user/dashboard">
                     U.Dashboard
                 </Link>
             </li>
-            )}
+            )} */}
             
             {isAutheticated() && isAutheticated().user.role ===1 && (
                 <li className="nav nav-tabs bg-dark">

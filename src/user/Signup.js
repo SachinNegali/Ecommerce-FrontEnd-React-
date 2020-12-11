@@ -43,7 +43,9 @@ const Signup = () => {
     const signUpForm = () => {
         return(
             <div className="row">
-                <div className="col-md-4 offset-sm-4 text-left">
+                    <h5 className="text-dark offset-sm-2">please use email: <span className="font-weight-bold"> admin@email.com </span> password: <span className="font-weight-bold">admin@123</span> for login to perform CRUD operations</h5>
+
+                <div className="col-md-6 offset-sm-3 text-left">
                 <form>
                     <div className="form-group">
                         <label className="text-dark"> Name</label>

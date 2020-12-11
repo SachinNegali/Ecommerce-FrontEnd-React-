@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Base title="Home Page" description="Everything you need">
+    <Base title="Home Page" description="Backend is deployed in Heroku! Please wait for the contents to appear">
       <div className="row text-center">
      
         {/* <div className="container">

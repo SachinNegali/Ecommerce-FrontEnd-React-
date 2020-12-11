@@ -101,3 +101,20 @@ export const updateProduct = (productId, userId, token, product) => {
     })
     .catch(err => console.log(err));
 };
+
+
+// remove Category
+export const removeCategory = (categoryId, userId, token) => {
+  return fetch(`${API}/category/${categoryId}/${userId}`, {
+    method: "DELETE",
+    headers: {
+      Accept: "application/json",
+      Authorization: `Bearer ${token}`
+    }
+  })
+    .then(response => {
+      return response.json();
+    })
+    .catch(err => console.log(err));
+};
+
